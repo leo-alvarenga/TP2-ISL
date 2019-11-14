@@ -28,7 +28,7 @@ module novo(clk,reset,ok,nota,fim,tipo,display);
 									      la  = 4'b0110,
 									      si  = 4'b0111,
 									  nota_x2 = 4'b1000,
-										 do_m = 4'b1001,
+										 Do_m = 4'b1001,
 										 re_m = 4'b1010,
 									     mi_m = 4'b1011,
 										 fa_m = 4'b1100,
@@ -85,7 +85,7 @@ module novo(clk,reset,ok,nota,fim,tipo,display);
 			estado_nota3_la:begin
 				if(nota == nota_x1 || nota == nota_x2)
 					proximo_estado = estado_adj;
-				else if(nota == do)
+				else if(nota == Do)
 					proximo_estado = estado_nota4_do;
 				else if(nota == si_m)
 					proximo_estado = estado_nota4_si;
